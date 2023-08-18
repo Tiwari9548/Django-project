@@ -1,0 +1,52 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title  %} About {% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/banner/b1.jpg '%}" class="d-block w-100" alt="banner images">
+      </div>
+      <div class="carousel-item ">
+        <img src="{% static 'images/banner/b2.jpg '%}" class="d-block w-100" alt="banner images">
+      </div> 
+      <div class="carousel-item ">
+        <img src="{%  static 'images/banner/b3.jpg'%}" class="d-block w-100" alt="banner images">
+      </div> 
+      <div class="carousel-item ">
+        <img src="{% static 'images/banner/b4.jpg '%}" class="d-block w-100" alt="banner images">
+      </div>
+      
+    </div>
+  </div>
+{% endblock banner-slider %}
+
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">This is a public limited company having its registeref and corporates office at
+            delhi city in india. The company was incorporated in the year 
+            2018 and production commenced in 2020.
+            This is the one of the fastest growing public listed companies in delhi.
+        </p>
+    </div>
+    <br><br>
+       <h2 class="text-center">MISSION</h2>
+    <div class="row container">
+        <p class="fs-4 text-center">To embrace the right technology to delight our customer
+            Empowering the farmer through our unique Relationship farming Model
+        To anticipate, the under stanf and espond to our customers needs by creating high quality products and making them available
+         through innovative and conventiant channels.
+            </p>
+
+    </div>
+
+</div>
+<br><br>
+
+{% endblock main-content %}
